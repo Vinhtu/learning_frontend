@@ -5,8 +5,10 @@
 }
 .mautop{
 	width: 100%;
-	height: 390px;
+	
 	background-color: #e0ebe8;
+	height: 100vh;
+	
 }
 .top{
 	width: 100%;
@@ -32,9 +34,9 @@
 }
 .names{
 	width: 100%;
-	height: 400px;
+	min-height: 50vh;
 	text-align: center;
-	padding-top: 75px
+	padding-top: 30vh;
 }
 .mimic{
 	font-size: 35px;
@@ -47,8 +49,10 @@
 }
 .main{
 	text-align: center;
-	height: px;
 	padding: 0 auto;
+}
+.mai1{
+	width: 100%;
 }
 .name-list p{
 	margin-top: 50px;
@@ -64,7 +68,8 @@
 	justify-content: center;
 }
 .list1{
-	width: 280px;
+	width: 285px;
+	height: 215px;
 	border: 2px solid lightblue;	
 	margin: 40px 100px;
 }
@@ -76,14 +81,14 @@
 	margin-top: -4px;
 	margin-bottom: -2px;
 	line-height: 30px;
-	height: 30px;
+	height: 33px;
 	font-size: 19px;
 	border: 2px solid lightblue;
 	border-right: 0;
 	border-left: 0;
 }
 .img1{
-    width: 280px;
+    width: 285px;
 	height: 180px;
 }
 .showall {   
@@ -106,7 +111,8 @@
 	
 	background-color: #C8F7C5;
 	text-align: center;
-	align-items: center;	
+	align-items: center;
+    padding-bottom: 100px;	
 }
 .share-name{	
 	padding-top: 100px;
@@ -120,7 +126,7 @@
 	margin-top: 0;
 }
 .h{
-	height: 105px;
+	
 	padding-top: 10px;
 	align-items: center;
 	text-align: center;
@@ -130,6 +136,7 @@
 	justify-content: center;
 	}
 .h li{
+	
 	display: inline-block;
 	margin: 20px 45px;
 	
@@ -168,8 +175,44 @@
 .news .news2 a{
 	color: white;
 }
+
+
+@media screen and (max-width: 768px){
+	.list1{
+		width: 40%;
+		margin: 5% 2%;	
+	}
+	.img1{
+		width: 100%;   
+	}
+	.list1 a p{
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 500px){
+	.list1{
+		width: 40%;
+		margin: 5% 3%;
+	}
+	.img1{
+		width: 100%;
+	}
+	.list1 a p{
+		font-size:70%;
+	}
+}
+@media screen and (max-width: 390px){
+
 	
-	
-	
+	.list1 a p{
+		font-size: 63%;
+	}
+}
+@media screen and (max-width: 321px){
+	.list1 a p{
+		font-size: 50%;
+	}
+}
+		
 
 
