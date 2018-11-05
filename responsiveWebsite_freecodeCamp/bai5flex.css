@@ -1,8 +1,13 @@
 
+body * {
+    display: flex;   
+}
 .all{
-	width: 100%;	
+    width: 100%;
+    flex-direction: column;	
 }
 .mautop{
+    flex-direction: column;   
 	width: 100%;
 	padding: 10px;
 	margin-top: -10px;
@@ -11,91 +16,78 @@
 	height: 100vh;
 }
 .top-flex{
-    display: flex;
+    flex: 1.5;
     justify-content: flex-end;
 }
 .top{
-	width: 35%;
-    height: 70px;
+    width: 35%;   
+    list-style-type: none;
+    justify-content: space-between;
 }
-.top .top-ul{ 
-    display: flex;
-    justify-content: space-around;
-	list-style-type: none;
-}
-.top .top-ul li{
-    font-size: 20px;
-	display: inline-table;
+.top  li{
+    font-size: 24px;
 	margin-top: 20px;
-	
 }
-.top .top-ul li a{
+.top li a{
 	color: #008080;
 	text-decoration: none;
 }
-.top .top-ul li a:hover{
+.top li a:hover{
 	color: green;
 }
 .flex-names{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;;
-    justify-content: center;
-}
-.name{}
-.mimic{
-	font-size: 35px;
-	margin-bottom: 0px;
-}
-.develop{
-    text-align: center;
-	font-size: 20px;
-	color: green;
-	margin-top: -15px;
-}
-.flex-name-list{
-    display: flex;
-    justify-content: center;
+    flex: 2;   
+    flex-direction: column;  
     
 }
-.name-list{   
-    height: 40px;
-    padding-bottom: 70px;
+.mimic{
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 0px;	
+}
+.develop{
+    justify-content: center;
+	font-size: 24px;
+    color: green;
+    margin-top: -20px;
+}
+.flex-name-list{
+    width: 100%;
+    height: 100%;
+}
+.name-list{ 
+    width: 100%;  
+    justify-content: center;   
 }
 .name-list p{
-    margin-top: 50px;
-	font-size: 30px;
-    color: #008080;
     text-align: center;
+	font-size: 33px;
+    color: #008080; 
 }
 .main{
-	text-align: center;	
-}
-.mai1{
-	width: 100%;
-}
-.width-list{	
+    text-align: center;	
+    justify-content: center;
 }
 .list{	
-	margin: 0 auto;	
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    width: 100%;	
+    flex-wrap: wrap;
+    justify-content: center;	
 }
 .list1{
 	width: 285px;
-	height: 215px;
+    height: 215px;
 	border: 2px solid lightblue;	
 	margin: 40px 100px;
 }
 .list1 a{
-	text-decoration: none;	
+    text-decoration: none;	
+    flex-direction: column;
 }
 .list1 a p{
+    justify-content: center;
 	color: #008080;
-	margin-top: -4px;
-	margin-bottom: -2px;
+	margin-top: 0px;
+	margin-bottom: -1px;
 	line-height: 30px;
 	height: 33px;
 	font-size: 19px;
@@ -108,9 +100,7 @@
 	height: 180px;
 }
 .flex-showall{
-    display: flex;
     justify-content: center;
-    text-align: center;
 }
 .showall {   
     width: 200px;
@@ -120,49 +110,46 @@
 	font-size: 19px;
 	text-decoration: none;
 	line-height: 40px;
-    display: block;
     color: #008080;    
     border: 2px solid #90C695;
     border-radius: 4px; 
+    justify-content: center;
 }
 .showall:hover{
 	background-color: #E4F1FE;
 }
 .share{
+    flex-direction: column;
 	margin: 0 -10px;
 	background-color: #C8F7C5;
-	align-items: center;
     padding-bottom: 100px;	
 }
-.share-name{ 	
+.share-name{ 
+    flex-direction: column;
 	padding-top: 100px;
 }
-.together{
-    display: flex;
+.together{  
     justify-content: center;
 	font-size: 35px;
 	margin-bottom: 0;
 }
 .coffee{
-    display: flex;
     justify-content: center;
 	font-size: 19px;
 	margin-top: 0;
 }
-.h{
-    display: flex;
+.h{ 
 	padding-top: 10px;
-	align-items: center;
-	text-align: center;
+	justify-content: center;
 	list-style-type: none;     
     padding-bottom: 70px;
 	flex-wrap: wrap;
-	justify-content: center;
 	}
 .h li{
-	margin: 20px 45px;	
+    margin: 20px 45px;	
 }
 .h1{
+    
 	color: #008080;
 	display: block;
 	width: 104px;
@@ -173,17 +160,19 @@
 	text-decoration: none;
 	line-height: 104px;	
 	font-size: 20px;
-	font-weight: bold;
+    font-weight: bold;
+    text-align: center;
 }
+
 .h1:hover{
 	background-color: #E4F1FE;
 }
 .news{
-	margin: -20px -10px 0 -10px;
-	background-color: #22313F;
+	margin: -20px -10px -10px -10px;
+    background-color: #22313F;
+    flex-direction: column;
 }
-.news .news1{
-    display: flex;
+.news .news1{ 
     justify-content: center; 
     text-align: center;  
 	padding-top: 20px;
@@ -191,10 +180,10 @@
 	color: white;
 }
 .news .news2{
-    display: flex;
     justify-content: center; 
 	font-size: 20px;
-	color: white;
+    color: white;
+    margin-top: -5px;
 	padding-bottom: 10px;
 }
 .news .news2 a{
