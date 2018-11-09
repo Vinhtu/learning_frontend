@@ -38,11 +38,10 @@ body * {
 .flex-names{
     flex: 2;   
     flex-direction: column;  
-    
 }
 .mimic{
     justify-content: center;
-    font-size: 40px;
+    font-size: 37px;
     margin-bottom: 0px;	
 }
 .develop{
@@ -52,7 +51,8 @@ body * {
     margin-top: -20px;
 }
 .flex-name-list{
-    width: 100%;
+	width: 100%;
+	margin-top: 50px;
 }
 .name-list{ 
     width: 100%;  
@@ -95,7 +95,7 @@ body * {
 	border-left: 0;
 }
 .img1{
-    width: 281px;
+    width: 282px;
 	height: 180px;
 }
 .flex-showall{
@@ -108,7 +108,7 @@ body * {
     background: #e0ebe8;
 	font-size: 19px;
 	text-decoration: none;
-	line-height: 40px;
+	line-height: 35px;
     color: #008080;    
     border: 2px solid #90C695;
     border-radius: 4px; 
